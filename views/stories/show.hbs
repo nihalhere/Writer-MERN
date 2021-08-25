@@ -1,0 +1,42 @@
+<div class="row">
+
+  <div class="col-xl-8 col-lg-7">
+    <div class="card shadow mb-4">
+      <!-- Card Header -->
+      <div
+        class="card-header py-3 d-flex flex-row align-items-center justify-content-between p-3"
+      >
+        <h6 class="m-0 font-weight-bold text-primary">{{story.title}}</h6>
+        <div class="balance_icon">
+
+        <div>{{{editIcon story.user user story._id}}}</div>
+        <div>{{{deleteIcon story.user user story._id}}}</div>
+        </div>
+      </div>
+      <!-- Card Body -->
+      <div class="card-body">
+          <span class="card-title" style="color:black">{{formatDate
+            date
+            "MMMM Do YYYY, h:mm:ss a"
+          }}</span>
+          {{{story.body}}}
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-4 col-lg-5">
+    <div class="card shadow mb-4">
+      <!-- Card Header-->
+      <div class="card-header py-3 d-flex flex-row align-items-center">
+                <a href="/stories/user/{{story.user._id}}"><img class="rounded-circle btn-sm profile-sm" src="{{story.user.image}}"></a>
+                <span class="name-date">
+                    <a href="/stories/user/{{story.user._id}}"><span class=" text-primary">{{story.user.displayName}}</span></a>
+                </span>
+        </div>
+      </sdiv>
+      <!-- Card Body -->
+      <div class="card-body p-1">
+        <a href="/stories/user/{{story.user._id}}">Read More from {{story.user.displayName}}</a>
+    </div>
+  </div>
+</div>

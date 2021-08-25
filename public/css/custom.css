@@ -1,0 +1,30 @@
+.profile-sm{
+    height: 2.4rem;
+    width: auto;
+}
+.card-header{
+    margin: 1px;
+    padding: 1px;
+}
+.story-info{
+    display: flex;
+    flex-direction: row;
+}
+.name-date{
+    display: flex;
+    flex-direction: column;
+    font-size: .80rem;
+}
+.card-body{
+    padding-bottom: 1px !important;
+}
+.balance_icon{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+    min-width: 1rem;
+}
